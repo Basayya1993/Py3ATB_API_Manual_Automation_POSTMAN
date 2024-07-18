@@ -1,0 +1,254 @@
+{
+	"id": "868b3950-aeee-4968-8e1e-5e0ad3ecc7f7",
+	"name": "Project#1_SOAP",
+	"timestamp": "2024-07-18T09:30:55.184Z",
+	"collection_id": "34913180-fd45a713-5435-482e-a46e-889558e6e1f2",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 20,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-18T09:30:51.587Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "015df020-f76b-4414-bd7d-5e2e44446228",
+			"name": "SOAP_Request_Positive",
+			"url": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+			"time": 238,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Successful POST request": true,
+				"Response time is less than 200ms": true,
+				"Content type is 'text/xml'": true,
+				"Validate the structure of the response": true,
+				"M:NumberToWordsResult is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content type is 'text/xml'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the structure of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"M:NumberToWordsResult is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				238
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Successful POST request": true,
+					"Response time is less than 200ms": true,
+					"Content type is 'text/xml'": true,
+					"Validate the structure of the response": true,
+					"M:NumberToWordsResult is not empty": true
+				}
+			]
+		},
+		{
+			"id": "4bbbe465-4702-48e9-9f41-cb0d976da3f4",
+			"name": "SOAP_Request_Negative",
+			"url": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+			"time": 268,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Successful POST request": true,
+				"Response time is less than 200ms": true,
+				"Content type is 'text/xml'": true,
+				"Validate the structure of the response": true,
+				"M:NumberToWordsResult is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content type is 'text/xml'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the structure of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"M:NumberToWordsResult is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				268
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Successful POST request": true,
+					"Response time is less than 200ms": true,
+					"Content type is 'text/xml'": true,
+					"Validate the structure of the response": true,
+					"M:NumberToWordsResult is not empty": true
+				}
+			]
+		},
+		{
+			"id": "8cc69c8d-e617-4ebc-adf0-a2d7c3627a9d",
+			"name": "SOAP_Request_Special_Char",
+			"url": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+			"time": 340,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": false,
+				"Content type is 'text/xml'": true,
+				"Validate the structure of the response": true,
+				"M:NumberToWordsResult is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content type is 'text/xml'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the structure of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"M:NumberToWordsResult is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				340
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": false,
+					"Content type is 'text/xml'": true,
+					"Validate the structure of the response": true,
+					"M:NumberToWordsResult is not empty": true
+				}
+			]
+		},
+		{
+			"id": "fd912895-e984-44db-b6d2-9915626eea5a",
+			"name": "SOAP_Request_String",
+			"url": "https://www.dataaccess.com/webservicesserver/NumberConversion.wso",
+			"time": 326,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": false,
+				"Content type is 'text/xml'": true,
+				"Validate the structure of the response": true,
+				"M:NumberToWordsResult is not empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content type is 'text/xml'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the structure of the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"M:NumberToWordsResult is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				326
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": false,
+					"Content type is 'text/xml'": true,
+					"Validate the structure of the response": true,
+					"M:NumberToWordsResult is not empty": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1172,
+	"collection": {
+		"requests": [
+			{
+				"id": "015df020-f76b-4414-bd7d-5e2e44446228",
+				"method": "POST"
+			},
+			{
+				"id": "4bbbe465-4702-48e9-9f41-cb0d976da3f4",
+				"method": "POST"
+			},
+			{
+				"id": "8cc69c8d-e617-4ebc-adf0-a2d7c3627a9d",
+				"method": "POST"
+			},
+			{
+				"id": "fd912895-e984-44db-b6d2-9915626eea5a",
+				"method": "POST"
+			}
+		]
+	}
+}
