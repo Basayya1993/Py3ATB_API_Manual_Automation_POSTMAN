@@ -1,0 +1,286 @@
+{
+	"id": "6ab7fbcb-ff0c-40aa-84b2-27c5c67359d9",
+	"name": "Project#2_REST_API_Testing",
+	"timestamp": "2024-07-19T10:36:32.044Z",
+	"collection_id": "34913180-074535e8-a939-487d-990f-3bf733a11b90",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-19T10:36:28.036Z",
+	"totalFail": 6,
+	"results": [
+		{
+			"id": "30512df5-373c-4988-8cf5-778d8307950e",
+			"name": "Get_BookingID",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 500,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				500
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "85ef93d5-26f5-442e-aaf0-d8cc996f25fd",
+			"name": "Get_Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 239,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				239
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "f6c7b692-8e80-4dbe-9e44-a3841d89c550",
+			"name": "Create_Booking",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 246,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type is application/json": true,
+				"Response time is less than 200ms": true,
+				"Validate the booking object schema": true,
+				"Checkin and checkout dates are in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the booking object schema": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checkin and checkout dates are in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				246
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type is application/json": true,
+					"Response time is less than 200ms": true,
+					"Validate the booking object schema": true,
+					"Checkin and checkout dates are in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "76a0837e-7678-4645-b7f9-5a4cd6009eb7",
+			"name": "Update_Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 247,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				247
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "2723afcc-ff64-414e-b526-1ffc69b37d4a",
+			"name": "Partial_Update_Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 323,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response status code is 403": true,
+				"Content-Type header is 'text/plain'": false,
+				"Response time is less than 500ms": true,
+				"Response body matches the expected schema for a 403 error": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is 'text/plain'": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body matches the expected schema for a 403 error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				323
+			],
+			"allTests": [
+				{
+					"Response status code is 403": true,
+					"Content-Type header is 'text/plain'": false,
+					"Response time is less than 500ms": true,
+					"Response body matches the expected schema for a 403 error": false
+				}
+			]
+		},
+		{
+			"id": "1585ee32-520e-4fce-b6d5-35a0f6222991",
+			"name": "Delete_Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/1",
+			"time": 342,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response status code is 403": true,
+				"Response content type is text/plain": false,
+				"Response body contains the text 'Forbidden'": true,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response content type is text/plain": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response body contains the text 'Forbidden'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				342
+			],
+			"allTests": [
+				{
+					"Response status code is 403": true,
+					"Response content type is text/plain": false,
+					"Response body contains the text 'Forbidden'": true,
+					"Response time is less than 200ms": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1897,
+	"collection": {
+		"requests": [
+			{
+				"id": "30512df5-373c-4988-8cf5-778d8307950e",
+				"method": "GET"
+			},
+			{
+				"id": "85ef93d5-26f5-442e-aaf0-d8cc996f25fd",
+				"method": "GET"
+			},
+			{
+				"id": "f6c7b692-8e80-4dbe-9e44-a3841d89c550",
+				"method": "POST"
+			},
+			{
+				"id": "76a0837e-7678-4645-b7f9-5a4cd6009eb7",
+				"method": "PUT"
+			},
+			{
+				"id": "2723afcc-ff64-414e-b526-1ffc69b37d4a",
+				"method": "PATCH"
+			},
+			{
+				"id": "1585ee32-520e-4fce-b6d5-35a0f6222991",
+				"method": "DELETE"
+			}
+		]
+	}
+}
